@@ -37,36 +37,11 @@ Backend Laravel berperan sebagai **API server** yang menangani autentikasi, mana
 
 ---
 
-## ⚙️ Arsitektur & Integrasi Sistem
-
-Aplikasi ini menggunakan pendekatan **Client-Server Architecture** dengan komunikasi melalui **RESTful API**.
-
-```mermaid
-flowchart LR
-    A[📱 Flutter GetX Mobile App] -->|HTTP/JSON| B[🌐 Laravel Backend API]
-    B -->|Query| C[(📂 MySQL Database)]
-    B --> D[📤 Midtrans/Xendit (Payment Gateway)]
-    B --> E[📩 Firebase / OneSignal (Push Notification)]
-```
-
-**Penjelasan Singkat:**
-
-- Flutter → UI/UX + logic di sisi user (sales).
-- GetX → state management & dependency injection.
-- Laravel → penyedia API, autentikasi JWT, validasi data, dan logic bisnis.
-- MySQL → penyimpanan utama (26 tabel terintegrasi).
-- Firebase / OneSignal → push notification untuk sales.
-- Midtrans / Xendit → pembayaran dan komisi otomatis.
-
----
-
 ## 🗄️ Desain Database (ERD)
 
 Struktur database terdiri dari **26 tabel** yang mengelola seluruh aktivitas utama sistem mulai dari autentikasi, manajemen perusahaan, sales, lead, transaksi, KPI, payroll, e-learning, hingga logging sistem.
 
-```markdown
-![Database ERD](assets/Untitled.png)
-```
+<p align="center"> <img src="https://github.com/satrioramadhan/aplikasi_manajemen_sales_dan_pemasaran/blob/main/assets/Untitled.png?raw=true" alt="Database ERD" width="800"/> </p>
 
 ### 📋 Daftar Tabel dan Fungsinya
 
@@ -108,7 +83,7 @@ Struktur database terdiri dari **26 tabel** yang mengelola seluruh aktivitas uta
 | Kategori            | Teknologi             | Deskripsi                                                                     |
 | ------------------- | --------------------- | ----------------------------------------------------------------------------- |
 | **Frontend Mobile** | Flutter (GetX)        | Framework cross-platform untuk iOS & Android dengan state management reaktif. |
-| **Backend API**     | Laravel 10            | Framework PHP modern untuk REST API & integrasi database.                     |
+| **Backend API**     | Laravel               | Framework PHP modern untuk REST API & integrasi database.                     |
 | **Database**        | MySQL                 | Database relasional dengan 26 tabel terintegrasi.                             |
 | **Autentikasi**     | Laravel Sanctum / JWT | Autentikasi API aman antar platform.                                          |
 | **Notifikasi**      | Firebase / OneSignal  | Push notification real-time ke mobile sales.                                  |
