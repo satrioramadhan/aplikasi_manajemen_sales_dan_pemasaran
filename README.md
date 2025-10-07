@@ -80,15 +80,12 @@ Struktur database terdiri dari **26 tabel** yang mengelola seluruh aktivitas uta
 
 ## 🧪 Teknologi yang Digunakan
 
-| Kategori            | Teknologi             | Deskripsi                                                                     |
-| ------------------- | --------------------- | ----------------------------------------------------------------------------- |
-| **Frontend Mobile** | Flutter (GetX)        | Framework cross-platform untuk iOS & Android dengan state management reaktif. |
-| **Backend API**     | Laravel               | Framework PHP modern untuk REST API & integrasi database.                     |
-| **Database**        | MySQL                 | Database relasional dengan 26 tabel terintegrasi.                             |
-| **Autentikasi**     | Laravel Sanctum / JWT | Autentikasi API aman antar platform.                                          |
-| **Notifikasi**      | Firebase / OneSignal  | Push notification real-time ke mobile sales.                                  |
-| **Payment Gateway** | Midtrans / Xendit     | Integrasi transaksi dan komisi otomatis.                                      |
-| **Version Control** | Git & GitHub          | Manajemen versi dan kolaborasi tim.                                           |
+| Kategori            | Teknologi      | Deskripsi                                                                     |
+| ------------------- | -------------- | ----------------------------------------------------------------------------- |
+| **Frontend Mobile** | Flutter (GetX) | Framework cross-platform untuk iOS & Android dengan state management reaktif. |
+| **Backend API**     | Laravel        | Framework PHP modern untuk REST API & integrasi database.                     |
+| **Database**        | MySQL          | Database relasional dengan 26 tabel terintegrasi.                             |
+| **Version Control** | Git & GitHub   | Manajemen versi dan kolaborasi tim.                                           |
 
 ---
 
