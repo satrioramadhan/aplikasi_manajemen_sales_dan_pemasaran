@@ -3,7 +3,10 @@
     "allow": [
       "Bash(flutter pub:*)",
       "Bash(dir:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nAdd comprehensive sales management features with modern UI\n\n- Added onboarding screen with 4 pages and smooth animations\n- Updated color scheme to modern purple/cyan gradient\n- Implemented attendance tracking with GPS location verification\n- Created profile & settings with logout functionality\n- Built reports & analytics with sales charts\n- Enhanced dashboard with KPI, leaderboard, and quick actions\n- Implemented lead management with status tracking and activity timeline\n- Added product catalog with search, filter, and promotion sharing\n- Fixed all UI overflow issues and GetX warnings\n- Integrated all features with bottom navigation\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git push:*)",
+      "Bash(flutter analyze:*)"
     ],
     "deny": [],
     "ask": []

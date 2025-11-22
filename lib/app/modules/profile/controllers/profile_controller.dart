@@ -96,26 +96,26 @@ class ProfileController extends GetxController {
 
   // Navigate to Edit Profile
   void goToEditProfile() {
-    Get.snackbar('Coming Soon', 'Edit Profile feature');
+    Get.toNamed(Routes.EDIT_PROFILE);
   }
 
   // Navigate to Change Password
   void goToChangePassword() {
-    Get.snackbar('Coming Soon', 'Change Password feature');
+    Get.toNamed(Routes.CHANGE_PASSWORD);
   }
 
   // Navigate to Settings
   void goToSettings() {
-    Get.snackbar('Coming Soon', 'Settings feature');
+    Get.toNamed(Routes.SETTINGS);
   }
 
   // Navigate to Help & Support
   void goToHelpSupport() {
-    Get.snackbar('Coming Soon', 'Help & Support feature');
+    Get.toNamed(Routes.HELP_SUPPORT);
   }
 
   // Navigate to About
   void goToAbout() {
-    Get.snackbar('Coming Soon', 'About feature');
+    Get.toNamed(Routes.ABOUT);
   }
 }

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_text_styles.dart';
+import '../../../data/models/user_model.dart';
 import '../controllers/profile_controller.dart';
 
 class ProfileView extends GetView<ProfileController> {
@@ -21,7 +22,7 @@ class ProfileView extends GetView<ProfileController> {
           slivers: [
             // App Bar with Gradient
             SliverAppBar(
-              expandedHeight: 200,
+              expandedHeight: 220,
               pinned: true,
               backgroundColor: AppColors.primary,
               flexibleSpace: FlexibleSpaceBar(
@@ -33,7 +34,6 @@ class ProfileView extends GetView<ProfileController> {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        const SizedBox(height: 40),
                         // Profile Photo
                         Container(
                           width: 100,
@@ -176,7 +176,7 @@ class ProfileView extends GetView<ProfileController> {
     );
   }
 
-  Widget _buildInfoCard(user) {
+  Widget _buildInfoCard(UserModel user) {
     return Container(
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(

@@ -22,6 +22,16 @@ import '../modules/onboarding/bindings/onboarding_binding.dart';
 import '../modules/onboarding/views/onboarding_view.dart';
 import '../modules/profile/bindings/profile_binding.dart';
 import '../modules/profile/views/profile_view.dart';
+import '../modules/elearning/bindings/elearning_binding.dart';
+import '../modules/elearning/views/elearning_view.dart';
+import '../modules/profile/views/edit_profile/edit_profile_view.dart';
+import '../modules/profile/views/edit_profile/edit_profile_controller.dart';
+import '../modules/profile/views/change_password/change_password_view.dart';
+import '../modules/profile/views/change_password/change_password_controller.dart';
+import '../modules/profile/views/settings/settings_view.dart';
+import '../modules/profile/views/settings/settings_controller.dart';
+import '../modules/profile/views/help_support/help_support_view.dart';
+import '../modules/profile/views/about/about_view.dart';
 
 part 'app_routes.dart';
 
@@ -100,6 +110,40 @@ class AppPages {
       name: _Paths.PROFILE,
       page: () => const ProfileView(),
       binding: ProfileBinding(),
+    ),
+    GetPage(
+      name: _Paths.ELEARNING,
+      page: () => const ElearningView(),
+      binding: ElearningBinding(),
+    ),
+    GetPage(
+      name: _Paths.EDIT_PROFILE,
+      page: () => const EditProfileView(),
+      binding: BindingsBuilder(() {
+        Get.lazyPut<EditProfileController>(() => EditProfileController());
+      }),
+    ),
+    GetPage(
+      name: _Paths.CHANGE_PASSWORD,
+      page: () => const ChangePasswordView(),
+      binding: BindingsBuilder(() {
+        Get.lazyPut<ChangePasswordController>(() => ChangePasswordController());
+      }),
+    ),
+    GetPage(
+      name: _Paths.SETTINGS,
+      page: () => const SettingsView(),
+      binding: BindingsBuilder(() {
+        Get.lazyPut<SettingsController>(() => SettingsController());
+      }),
+    ),
+    GetPage(
+      name: _Paths.HELP_SUPPORT,
+      page: () => const HelpSupportView(),
+    ),
+    GetPage(
+      name: _Paths.ABOUT,
+      page: () => const AboutView(),
     ),
   ];
 }

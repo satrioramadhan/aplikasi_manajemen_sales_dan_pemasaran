@@ -67,7 +67,8 @@ class ProductDetailView extends GetView<ProductController> {
                 ],
               ),
               child: IconButton(
-                icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
+                icon:
+                    const Icon(Icons.arrow_back, color: AppColors.textPrimary),
                 onPressed: () => Get.back(),
               ),
             ),
@@ -208,7 +209,8 @@ class ProductDetailView extends GetView<ProductController> {
                                   Text(
                                     Formatters.formatCurrency(
                                         product.getEffectivePrice()),
-                                    style: AppTextStyles.headlineMedium.copyWith(
+                                    style:
+                                        AppTextStyles.headlineMedium.copyWith(
                                       fontWeight: FontWeight.bold,
                                       color: AppColors.primary,
                                     ),
@@ -305,8 +307,8 @@ class ProductDetailView extends GetView<ProductController> {
                           separatorBuilder: (context, index) =>
                               const Divider(height: 1),
                           itemBuilder: (context, index) {
-                            final key = product.specifications!.keys
-                                .elementAt(index);
+                            final key =
+                                product.specifications!.keys.elementAt(index);
                             final value = product.specifications![key];
                             return Padding(
                               padding: const EdgeInsets.all(16),

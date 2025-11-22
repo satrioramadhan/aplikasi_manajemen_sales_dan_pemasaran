@@ -173,8 +173,7 @@ class DashboardController extends GetxController {
   }
 
   void goToELearning() {
-    // TODO: Navigate to e-learning
-    Get.snackbar('Coming Soon', 'E-Learning feature');
+    Get.toNamed(Routes.ELEARNING);
   }
 
   void goToProfile() {
